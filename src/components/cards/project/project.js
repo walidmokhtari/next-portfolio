@@ -1,17 +1,21 @@
 import React from "react";
 import Styles from './project.module.scss'
+import CardBg from '../../../../public/card_bg.jpg'
+import Link from "next/link";
 
 const Project = (props) => {
-
+    
     return (
-        <div className={Styles.project}>
-            <div className={Styles.project__title}>
+        <div className={Styles.cards}>
+            <div className={Styles.cards__top}>
+                <img src={CardBg.src}></img>
                 <h1>{props.title}</h1>
             </div>
-            <div className={Styles.section__cards}>
-                <div className={Styles.section__cards__top}></div>
-                <div className={Styles.section__cards__bottom}></div>
+            <div className={Styles.cards__bottom}>
+                <h1>Description</h1>
+                <p>{props.description}</p>
             </div>
+            <Link href={props.link ? props.link : ""} >Voir le projet</Link>
         </div>
     )
 }

@@ -1,9 +1,19 @@
 .section {
     background-color: #1e242c;
-    height: 500px;
-
+    padding-top: 100px;
+    padding-bottom: 200px;
+    border-bottom: solid 10px #2be281;
+    border-bottom-left-radius: 30%;
     &__title {
-        background-color: aqua;
         padding-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    &__cards {
+        display: flex;
+        flex-flow: row wrap;
+        gap: 1rem;
+        justify-content: space-around;
+        overflow: hidden;
     }
 }

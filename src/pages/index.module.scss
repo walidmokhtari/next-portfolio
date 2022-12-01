@@ -12,7 +12,11 @@
         top: 200px;
         left: 200px;
 
-        button {
+        p {
+            margin-bottom: 20px;
+        }
+
+        a {
             cursor: pointer;
             padding-left: 20px;
             padding-right: 20px;
@@ -22,6 +26,7 @@
             color: white;
             border-radius: 3px;
             border: none;
+            text-decoration: none;
         }
     }
 }

@@ -6,6 +6,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    padding: 1rem;
+    transition: background-color 0.3s ease-in-out;
+
     &__logo {
         display: flex;
         flex-direction: row;
@@ -17,7 +20,10 @@
             background-color: #2be281;
             padding: 2px;
             h1 {
-                color: #171c21;
+                color: white;
+                font-weight: bold;
+                padding-left: 5px;
+                padding-right: 5px;
             }
         }
 
@@ -32,15 +38,23 @@
         flex-direction: row;
         justify-content: center;
         flex-grow: 4;
+        align-items: center;
 
         div {
             padding-left: 10px;
             padding-right: 10px;
 
-            p {
+            a {
                 cursor: pointer;
                 font-weight: bold;
                 padding: 3px;
+                text-decoration: none;
+
+                &:visited {
+                    color: white;
+                }
+
+
             }
         }
 
@@ -86,4 +100,17 @@
             }
         }
     }
+}
+
+.header__bg {
+    background-color: #171c21;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.color__green {
+    color: #2be281;
+}
+
+.border__green {
+    color: #2be281;
 }

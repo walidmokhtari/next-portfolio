@@ -1,0 +1,28 @@
+.service:after {
+    color: #2be281;
+    border-left: 60px solid;
+    border-top: 75px solid transparent;
+    border-bottom: 75px solid transparent;
+    display: inline-block;
+    content: '';
+    position: absolute;
+    right: -45px;
+    top: 30px;
+  }
+.service {
+    background-color: #2be281;
+    width: 250px;
+    height: 250px;
+    display: inline-block;
+    position: relative;
+    
+    h1 {
+      width: 100%;
+      text-align: center;
+    }
+
+    p {
+      text-align: center;
+      color: #1e242c;
+    }
+  }
