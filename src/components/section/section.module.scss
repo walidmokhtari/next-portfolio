@@ -1,0 +1,9 @@
+.section {
+    background-color: #1e242c;
+    height: 500px;
+
+    &__title {
+        background-color: aqua;
+        padding-left: 20px;
+    }
+}
