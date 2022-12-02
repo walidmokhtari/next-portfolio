@@ -1,13 +1,13 @@
 .cards {
+    cursor: pointer;
     width: 300px;
+    transition: 0.7s ease;
 
     &__top {
         position: relative;
         img {
             width: 100%;
             filter: blur(4px);
-            border-top-left-radius: 5px;
-            border-top-right-radius: 5px;
         }
 
         h1 {
@@ -35,16 +35,8 @@
             color: #1e242c;
         }
     }
+}
 
-    a {
-        background-color: #2be281;
-        display: block;
-        text-align: center;
-        width: 100%;
-        border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px;
-        padding-bottom: 10px;
-        color: #1e242c;
-        font-weight: bold;
-    }
+.cards:hover {
+    transform: scale(1.1);
 }

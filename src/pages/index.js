@@ -5,6 +5,7 @@ import Section from '../components/section/section'
 import bgImage from '../../public/background.png'
 import Styles from './index.module.scss'
 import Link from 'next/link'
+import Footer from '../components/footer/footer'
 
 export default function Home() {
   return (
@@ -28,8 +29,9 @@ export default function Home() {
           </div>
         </div>
         <Section title="Projets" id="projets"/>
-        <Section title="Parcours" id="parcours" />
         <Section title="Services" id="services"/>
+        <Section title="Parcours" id="parcours" />
+        <Footer />
       </main>
     </div>
   )

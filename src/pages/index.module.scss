@@ -28,5 +28,10 @@
             border: none;
             text-decoration: none;
         }
+
+        @media screen and (max-width: 700px) {
+            top: 200px;
+            left: 20px;
+        }
     }
 }

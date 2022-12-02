@@ -6,7 +6,7 @@ import Link from "next/link";
 const Project = (props) => {
     
     return (
-        <div className={Styles.cards}>
+        <div onClick={() => window.location.assign(props.link)} className={Styles.cards} id="card">
             <div className={Styles.cards__top}>
                 <img src={CardBg.src}></img>
                 <h1>{props.title}</h1>
@@ -15,7 +15,6 @@ const Project = (props) => {
                 <h1>Description</h1>
                 <p>{props.description}</p>
             </div>
-            <Link href={props.link ? props.link : ""} >Voir le projet</Link>
         </div>
     )
 }
